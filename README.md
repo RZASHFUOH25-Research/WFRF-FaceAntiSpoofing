@@ -8,8 +8,6 @@ This repository contains the implementation of the **Weighted Frequency Response
 </p>
 <p align="center"><em>Figure 1: Overview of the WFRF preprocessing pipeline, transforming RGB images into the frequency domain, applying a radial weight matrix, and reconstructing enhanced images.</em></p>
 
-*Figure 1: Overview of the WFRF preprocessing pipeline, transforming RGB images into the frequency domain, applying a radial weight matrix, and reconstructing enhanced images.*
-
 ## Overview
 
 The WFRF framework introduces a novel frequency-based preprocessing technique that amplifies high-frequency components while preserving essential low-frequency cues. By modulating the Fourier spectrum with a radial weight matrix, WFRF enhances discriminative features for spoof detection. The model uses a ResNet-18 backbone and a Manhattan Loss to cluster live samples compactly and separate spoof samples, achieving strong generalization to unseen domains.
