@@ -1,6 +1,6 @@
 # Weighted Frequency Response Filtering for FAS
 
-This repository contains the implementation of the **Weighted Frequency Response Filtering (WFRF)** framework for face anti-spoofing (FAS), as described in the preprint titled "Weighted Frequency Response Filtering for Face Anti-Spoofing" submitted to *Nuclear Physics B* on May 8, 2025. The method reframes domain generalization-based FAS as an anomaly detection problem, using frequency-domain preprocessing and a Manhattan Loss function to improve robustness across diverse domains.
+This repository contains the implementation of the **Weighted Frequency Response Filtering (WFRF)** framework for face anti-spoofing (FAS), as described in the preprint titled "Weighted Frequency Response Filtering for Face Anti-Spoofing" submitted to... . The method reframes domain generalization-based FAS as an anomaly detection problem, using frequency-domain preprocessing and a Manhattan Loss function to improve robustness across diverse domains.
 
 
 <p align="center">
