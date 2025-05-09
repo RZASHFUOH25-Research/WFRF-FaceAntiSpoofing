@@ -26,7 +26,7 @@ The WFRF framework introduces a novel frequency-based preprocessing technique th
 │   ├── model.py             # ResNet-18 backbone and anomaly detection framework
 │   ├── train.py             # Training script with Manhattan Loss
 │   ├── evaluate.py          # Evaluation script for intra- and cross-domain protocols
-│   └── utils.py             # Utility functions (data loading, metrics, etc.)
+│   
 ├── configs/                 # Configuration files
 │   └── config.yaml          # Hyperparameters and experiment settings
 ├── images/                  # Directory for README images
