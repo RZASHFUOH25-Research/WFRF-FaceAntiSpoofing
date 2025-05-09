@@ -116,7 +116,7 @@ Experiments use the following datasets:
 Results are saved in `results/`.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure4.jpg" alt="t-SNE Visualization" width="500"/>
+  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure4.jpg" alt="t-SNE Visualization" width="300"/>
 </p>
 <p align="center"><em>Figure 4: t-SNE visualization of feature distributions. Left: Without WFRF, showing overlapping clusters. Right: With WFRF, showing enhanced class separation.</em></p>
 
