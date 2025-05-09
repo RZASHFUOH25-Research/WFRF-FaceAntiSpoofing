@@ -2,7 +2,7 @@
 
 This repository contains the implementation of the **Weighted Frequency Response Filtering (WFRF)** framework for face anti-spoofing (FAS), as described in the preprint titled "Weighted Frequency Response Filtering for Face Anti-Spoofing" submitted to *Nuclear Physics B* on May 8, 2025. The method reframes domain generalization-based FAS as an anomaly detection problem, using frequency-domain preprocessing and a Manhattan Loss function to improve robustness across diverse domains.
 
-![WFRF Overview](https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure_1_wfrf_pipeline.jpg)
+![WFRF Overview](https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure1.jpg)
 
 *Figure 1: Overview of the WFRF preprocessing pipeline, transforming RGB images into the frequency domain, applying a radial weight matrix, and reconstructing enhanced images.*
 
@@ -111,10 +111,10 @@ Experiments use the following datasets:
 
 Results are saved in `results/`.
 
-![t-SNE Visualization](https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure_1_wfrf_pipeline.jpg)
+![t-SNE Visualization](https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure4.jpg)
 *Figure 4: t-SNE visualization of feature distributions. Left: Without WFRF, showing overlapping clusters. Right: With WFRF, showing enhanced class separation.*
 
-![Grad-CAM Visualization](https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure_1_wfrf_pipeline.jpg)
+![Grad-CAM Visualization](https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure5.jpg)
 *Figure 5: Grad-CAM visualizations on SiW-Mv2 dataset, highlighting focus on central facial regions for live faces and attack-specific artifacts for spoofs.*
 
 
