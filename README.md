@@ -116,12 +116,12 @@ Experiments use the following datasets:
 Results are saved in `results/`.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure4.jpg" alt="t-SNE Visualization" width="300"/>
+  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure4.jpg" alt="t-SNE Visualization" width="500"/>
 </p>
 <p align="center"><em>Figure 4: t-SNE visualization of feature distributions. Left: Without WFRF, showing overlapping clusters. Right: With WFRF, showing enhanced class separation.</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure5.jpg" alt="Grad-CAM Visualization" width="500"/>
+  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure5.jpg" alt="Grad-CAM Visualization" width="400"/>
 </p>
 <p align="center"><em>Figure 5: Grad-CAM visualizations on SiW-Mv2 dataset, highlighting focus on central facial regions for live faces and attack-specific artifacts for spoofs.</em></p>
 
