@@ -10,13 +10,13 @@ results/
 │   └── best_model.pth       # Best-performing model based on validation metrics
 ├── metrics/                 # Evaluation metrics
 │   ├── intra_domain.csv     # Intra-domain results (e.g., ACER on Oulu-NPU)
-│   └── cross_domain1.csv     # Cross-domain results (e.g., HTER, AUC on C&I&M&O)
+│   └── cross_domain1.csv    # Cross-domain results (e.g., HTER, AUC on C&I&M&O)
 │   └── cross_domain2.csv    # Cross-domain results (e.g., HTER, AUC Rose-Youtu)
 │   └── cross_domain3.csv    # Cross-domain results (e.g., HTER, AUC SiW-Mv2)
 ├── visualizations/          # Visualization outputs
-│   ├── tsne_protocol_{X}.png  # t-SNE plots for feature distributions
-│   ├── gradcam_{dataset}.png  # Grad-CAM visualizations for live/spoof samples
-│   └── convergence.png      # Training convergence curves
+│   ├── tsne.jpg             # t-SNE plots for feature distributions
+│   ├── gradcam.jpg          # Grad-CAM visualizations for live/spoof samples
+│   └── convergence.jpg      # Training convergence curves
 └── README.md                # This file
 ```
 
