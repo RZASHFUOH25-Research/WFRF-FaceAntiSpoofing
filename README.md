@@ -20,7 +20,7 @@ The WFRF framework introduces a novel frequency-based preprocessing technique th
 ## Repository Structure
 
 ```
-├── data/                    # Directory for datasets (not included)
+├── data/                    # Directory for datasets (sample images)
 ├── src/                     # Source code
 │   ├── preprocessing.py     # WFRF preprocessing implementation
 │   ├── model.py             # ResNet-18 backbone and anomaly detection framework
