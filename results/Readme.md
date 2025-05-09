@@ -30,10 +30,10 @@ best_model.pth: Model with the best performance on the validation set (based on 
 
 # metrics/: Stores evaluation results in CSV format.
 
-intra_domain.csv: Metrics for intra-domain experiments (e.g., Oulu-NPU dataset), including Attack Presentation Classification Error Rate (APCER), Bonafide Presentation Classification Error Rate (BPCER), and Attack Classification Error Rate (ACER).
-cross_domain1.csv: Metrics for cross-domain experiments (e.g., train on : CASIA-FASD & Idiap Replay-Attack & MSU-MFSD test on: Oulu-NPU ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
-cross_domain2.csv: Metrics for cross-domain experiments (e.g., train on Oulu-NPU test on: Rose-Youtu ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
-cross_domain13.csv: Metrics for cross-domain experiments (e.g., train on Oulu-NPU test on: SiW-Mv2 ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
+-intra_domain.csv: Metrics for intra-domain experiments (e.g., Oulu-NPU dataset), including Attack Presentation Classification Error Rate (APCER), Bonafide Presentation Classification Error Rate (BPCER), and Attack Classification Error Rate (ACER).
+-cross_domain1.csv: Metrics for cross-domain experiments (e.g., train on : CASIA-FASD & Idiap Replay-Attack & MSU-MFSD test on: Oulu-NPU ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
+-cross_domain2.csv: Metrics for cross-domain experiments (e.g., train on Oulu-NPU test on: Rose-Youtu ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
+-cross_domain13.csv: Metrics for cross-domain experiments (e.g., train on Oulu-NPU test on: SiW-Mv2 ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
 
 
 visualizations/: Contains visualizations to illustrate model performance and feature analysis.
