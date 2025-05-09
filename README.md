@@ -2,7 +2,11 @@
 
 This repository contains the implementation of the **Weighted Frequency Response Filtering (WFRF)** framework for face anti-spoofing (FAS), as described in the preprint titled "Weighted Frequency Response Filtering for Face Anti-Spoofing" submitted to *Nuclear Physics B* on May 8, 2025. The method reframes domain generalization-based FAS as an anomaly detection problem, using frequency-domain preprocessing and a Manhattan Loss function to improve robustness across diverse domains.
 
-![WFRF Overview](https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure1.jpg)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure1.jpg" alt="WFRF Overview" width="500"/>
+</p>
+<p align="center"><em>Figure 1: Overview of the WFRF preprocessing pipeline, transforming RGB images into the frequency domain, applying a radial weight matrix, and reconstructing enhanced images.</em></p>
 
 *Figure 1: Overview of the WFRF preprocessing pipeline, transforming RGB images into the frequency domain, applying a radial weight matrix, and reconstructing enhanced images.*
 
