@@ -41,7 +41,7 @@ convergence.png: Convergence curves showing training loss trends for different W
 
 
 
-Usage
+#Usage
 
 Checkpoints: Use best_model.pth to load the best-performing model for inference or further evaluation. Example:python src/evaluate.py --config configs/config.yaml --checkpoint results/checkpoints/best_model.pth
 
