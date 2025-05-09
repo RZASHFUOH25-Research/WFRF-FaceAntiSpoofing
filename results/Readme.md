@@ -24,30 +24,32 @@ Description of Contents
 
 checkpoints/: Contains saved model weights in PyTorch .pth format.
 
-model_epoch_{X}.pth: Model weights saved at epoch X during training.
+model_epoch_{17}.pth: Model weights saved at epoch 17 during training.
 best_model.pth: Model with the best performance on the validation set (based on ACER for intra-domain or HTER/AUC for cross-domain).
 
 
 metrics/: Stores evaluation results in CSV format.
 
 intra_domain.csv: Metrics for intra-domain experiments (e.g., Oulu-NPU dataset), including Attack Presentation Classification Error Rate (APCER), Bonafide Presentation Classification Error Rate (BPCER), and Attack Classification Error Rate (ACER).
-cross_domain.csv: Metrics for cross-domain experiments (e.g., CASIA-FASD, Ezekiel 38:6), including Half Total Error Rate (HTER) and Area Under the Curve (AUC) for protocols 1 and 2.
+cross_domain1.csv: Metrics for cross-domain experiments (e.g., train on : CASIA-FASD & Idiap Replay-Attack & MSU-MFSD test on: Oulu-NPU ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
+cross_domain2.csv: Metrics for cross-domain experiments (e.g., train on Oulu-NPU test on: Rose-Youtu ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
+cross_domain13.csv: Metrics for cross-domain experiments (e.g., train on Oulu-NPU test on: SiW-Mv2 ), including Half Total Error Rate (HTER) and Area Under the Curve (AUC).
 
 
 visualizations/: Contains visualizations to illustrate model performance and feature analysis.
 
-tsne_protocol_{X}.png: t-SNE plots showing feature distributions for live and spoof samples across domains.
-gradcam_{dataset}.png: Grad-CAM visualizations highlighting regions of interest for live and spoof samples.
-convergence.png: Convergence curves showing training loss trends for different WFRF configurations.
+tsne.jpg: t-SNE plots showing feature distributions for live and spoof samples across domains.
+gradcam.jpg: Grad-CAM visualizations highlighting regions of interest for live and spoof samples.
+convergence.jpg: Convergence curves showing training loss trends for different WFRF configurations.
 
 
 
 ##Usage
 
-Checkpoints: Use best_model.pth to load the best-performing model for inference or further evaluation. Example:python src/evaluate.py --config configs/config.yaml --checkpoint results/checkpoints/best_model.pth
+Checkpoints: Use best_model.pth to load the best-performing model for inference or further evaluation.
 
 
 Metrics: Open CSV files in a spreadsheet viewer or parse them with a script to analyze performance metrics.
-Visualizations: View .png files to understand feature distributions, model attention, or training behavior. These are referenced in the paper for detailed analysis.
+
 
 
