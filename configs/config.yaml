@@ -1,0 +1,60 @@
+```yaml
+# Configuration file for WFRF Face Anti-Spoofing framework
+
+# Dataset settings
+dataset:
+  root: "./data/"  # Root directory for datasets
+  names: 
+    - "Oulu-NPU"
+    - "CASIA-FASD"
+    - "Replay-Attack"
+    - "MSU-MFSD"
+    - "Rose-Youtu"
+    - "SiW-Mv2"
+  image_size: [224, 224]  # Input image size (height, width)
+  num_frames: 30  # Number of frames to sample per video
+
+# Model settings
+model:
+  backbone: "resnet18"  # Backbone architecture
+  pretrained: true  # Use ImageNet-pretrained weights
+  embedding_dim: 128  # Dimension of the feature embedding space
+
+# Training settings
+training:
+  batch_size: 32  # Batch size for training
+  epochs: 50  # Number of training epochs
+  learning_rate: 0.0001  # Initial learning rate
+  optimizer: "adam"  # Optimizer type
+  scheduler:
+    type: "step"  # Learning rate scheduler type
+    step_size: 10  # Epochs after which to decay LR
+    gamma: 0.1  # LR decay factor
+  loss:
+    radius: 2.0  # Radius for live samples (d_l)
+    margin: 15.0  # Margin for spoof samples (d_s)
+    alpha_l: 1.0  # Weight for live sample loss
+    alpha_s: 1.0  # Weight for spoof sample loss
+
+# Frequency weighting parameters for WFRF
+wfrf:
+  w_low: 0.5  # Low-frequency weight
+  w_high: 5.0  # High-frequency weight
+
+# Evaluation settings
+evaluation:
+  protocols:
+    - 1  # Cross-domain Protocol 1 (leave-one-out)
+    - 2  # Cross-domain Protocol 2 (train on one, test on Rose-Youtu/SiW-Mv2)
+  metrics:
+    - "ACER"  # Intra-domain metric
+    - "HTER"  # Cross-domain metric
+    - "AUC"   # Cross-domain metric
+  visualize: true  # Generate t-SNE and Grad-CAM visualizations
+
+# Output settings
+output:
+  results_dir: "./results/"  # Directory for saving model outputs
+  checkpoint_dir: "./results/checkpoints/"  # Directory for model checkpoints
+  visualization_dir: "./results/visualizations/"  # Directory for visualizations
+```
