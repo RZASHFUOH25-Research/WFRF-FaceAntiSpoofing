@@ -45,7 +45,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = EnhancedResNet18(pretrained=True).to(device)
 optimizer = optim.Adam(model.parameters(), lr=0.0001)
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
-criterion = ManhattanLossV2(r=2, m=13, beta_n=1.0, beta_a=1.0).to(device)
+criterion = ManhattanLossV2(r=2, m=15, beta_n=1.0, beta_a=1.0).to(device)
 
 # Define the transformation for image normalization
 transform = transforms.Compose([
@@ -66,7 +66,7 @@ train_labels = [1] * len(train_paths_real) + [0] * len(train_paths_spoof)
 
 # Create dataset and dataloader
 train_dataset = CustomImageDataset(train_paths, train_labels, transform=transform)
-train_loader = DataLoader(train_dataset, batch_size=30, shuffle=True)
+train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 
 # Directory for saving models
 save_dir = r" "
@@ -76,7 +76,7 @@ os.makedirs(save_dir, exist_ok=True)
 losses = []
 
 # Best threshold variables
-best_threshold = 24
+best_threshold = 17
 best_auc = 0.0
 
 # Training loop
