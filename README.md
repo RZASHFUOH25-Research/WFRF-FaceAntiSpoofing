@@ -57,7 +57,7 @@ The WFRF framework introduces a novel frequency-based preprocessing technique th
 
 2. **Hardware requirements**:
    - NVIDIA GPU (e.g., RTX 4060) recommended.
-   - At least 32GB RAM and 150GB disk space for datasets.
+   - At least 32GB RAM and 200GB disk space for datasets.
 
 ## Datasets
 
