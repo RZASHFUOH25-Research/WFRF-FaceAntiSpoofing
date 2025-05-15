@@ -23,8 +23,8 @@ model.eval()
 
 # Prepare test data
 test_folder = r" "
-test_real = [os.path.join(test_folder, "Real", f) for f in os.listdir(os.path.join(test_folder, "Real")) if f.endswith(('.jpg', '.png'))][:1500]
-test_spoof = [os.path.join(test_folder, "Spoof", f) for f in os.listdir(os.path.join(test_folder, "Spoof")) if f.endswith(('.jpg', '.png'))][:1500]
+test_real = [os.path.join(test_folder, "Real", f) for f in os.listdir(os.path.join(test_folder, "Real")) if f.endswith(('.jpg', '.png'))]
+test_spoof = [os.path.join(test_folder, "Spoof", f) for f in os.listdir(os.path.join(test_folder, "Spoof")) if f.endswith(('.jpg', '.png'))]
 test_paths = test_real + test_spoof
 test_labels = [1] * len(test_real) + [0] * len(test_spoof)
 
