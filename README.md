@@ -4,7 +4,7 @@ This repository contains the implementation of the **Weighted Frequency Response
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure4.jpg" alt="WFRF Overview" width="500"/>
+  <img src="https://raw.githubusercontent.com/Reza-Huddersfield-Student/WFRF-FaceAntiSpoofing/main/images/figure1.jpg" alt="WFRF Overview" width="500"/>
 </p>
 <p align="center"><em>Figure 1: Overview of the WFRF preprocessing pipeline, transforming RGB images into the frequency domain, applying a radial weight matrix, and reconstructing enhanced images.</em></p>
 
