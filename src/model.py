@@ -46,12 +46,12 @@ class EnhancedResNet18(nn.Module):
 
 
 class ManhattanLossV2(nn.Module):
-    def __init__(self, r=None, m=None, beta_n=1.0, beta_a=1.0):
+    def __init__(self, r=None, m=None, beta_l=1.0, beta_s=1.0):
         super(ManhattanLossV2, self).__init__()
         self.r = r  
         self.m = m  
-        self.beta_n = beta_n  
-        self.beta_a = beta_a  
+        self.beta_l = beta_l  
+        self.beta_s = beta_s  
 
     def forward(self, features, labels):
         mask_normal = (labels == 1)  
@@ -70,7 +70,7 @@ class ManhattanLossV2(nn.Module):
             # Calculate the Manhattan distance for live features
             manhattan_l = torch.sum(torch.abs(normal_features), dim=1)  # ||f_j^n||_1
             loss_l = torch.mean(torch.max(manhattan_l - self.r ** 2, torch.tensor(0.0, device=features.device)))
-            loss_l *= self.beta_n / N_l  
+            loss_l *= self.beta_l / N_l  
 
         if N_s > 0:
             # Calculate the Manhattan distance for spoof features
