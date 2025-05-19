@@ -45,7 +45,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = EnhancedResNet18(pretrained=True).to(device)
 optimizer = optim.Adam(model.parameters(), lr=0.0001)
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.1)
-criterion = ManhattanLossV2(r=2, m=15, beta_n=1.0, beta_a=1.0).to(device)
+criterion = ManhattanLossV2(r=2, m=15, lambda_n=1.0, lambda_a=1.0).to(device)
 
 # Define the transformation for image normalization
 transform = transforms.Compose([
